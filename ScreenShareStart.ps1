@@ -1,3 +1,5 @@
+$ProgressPreference = 'SilentlyContinue'
+
 function Start-PersistentScript {
     param ([string]$Url)
     
