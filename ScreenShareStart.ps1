@@ -5,7 +5,7 @@ function Start-PersistentScript {
     Start-Process cmd.exe -Verb RunAs -ArgumentList "/k $command"
 }
 
-Start-PersistentScript "https://raw.githubusercontent.com/1Mets/tool-downloader/refs/heads/main/ScreenshareStart.ps1"
+Start-PersistentScript "https://raw.githubusercontent.com/1Mets/Forensics/refs/heads/main/Start.ps1"
 Start-PersistentScript "https://raw.githubusercontent.com/MeowTonynoh/Tonynoh-PS1/main/JVM-Inspector.ps1"
 Start-PersistentScript "https://raw.githubusercontent.com/MeowTonynoh/MeowModAnalyzer/main/MeowModAnalyzer.ps1"
 
