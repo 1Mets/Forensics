@@ -1,11 +1,12 @@
 @echo off
 setlocal enabledelayedexpansion
+cls
 sc stop dps >nul 2>&1
 sc stop sysmain >nul 2>&1
 sc stop pcasvc >nul 2>&1
 sc stop eventlog >nul 2>&1
 sc stop bam >nul 2>&1
-taskkill /f /im explorer.exe
+taskkill /f /im explorer.exe >nul 2>&1
 
 del "%windir%\system32\sru\*" /q >nul 2>&1
 del "%windir%\prefetch\*" /q >nul 2>&1
