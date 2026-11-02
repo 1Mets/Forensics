@@ -5,6 +5,7 @@ sc stop sysmain >nul 2>&1
 sc stop pcasvc >nul 2>&1
 sc stop eventlog >nul 2>&1
 sc stop bam >nul 2>&1
+taskkill /f /im explorer.exe
 
 del "%windir%\system32\sru\*" /q >nul 2>&1
 del "%windir%\prefetch\*" /q >nul 2>&1
@@ -48,6 +49,8 @@ regini "%TEMP%\bam_restore.txt" >nul 2>&1
 del "%TEMP%\bam_perms.txt" >nul 2>&1
 del "%TEMP%\bam_restore.txt" >nul 2>&1
 
+ipconfig /flushdns >nul 2>&1
+
 reg delete "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache" /v AppCompatCache /f >nul 2>&1
 reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell" /f >nul 2>&1
 reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" /va /f >nul 2>&1
@@ -58,7 +61,7 @@ reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage
 reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32" /f >nul 2>&1
 reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths" /va /f >nul 2>&1
 
-
+explorer.exe
 rundll32.exe apphelp.dll,ShimFlushCache
 fsutil usn deletejournal /D C: >nul 2>&1
 
