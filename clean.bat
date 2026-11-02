@@ -20,6 +20,7 @@ del "%LocalAppData%\CrashDumps\*" /f /q >nul 2>&1
 del "%windir%\appcompat\Programs\*" /f /q /a >nul 2>&1
 del "%AppData%\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt" /f /q /a >nul 2>&1
 del "%windir%\System32\winevt\Logs\*" /f /q /a >nul 2>&1
+rd /s /q "%systemdrive%\$Recycle.Bin" >nul 2>&1
 
 taskkill /f /im chrome.exe >nul 2>&1
 taskkill /f /im brave.exe >nul 2>&
