@@ -21,6 +21,20 @@ del "%windir%\appcompat\Programs\*" /f /q /a >nul 2>&1
 del "%AppData%\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt" /f /q /a >nul 2>&1
 del "%windir%\System32\winevt\Logs\*" /f /q /a >nul 2>&1
 
+taskkill /f /im chrome.exe >nul 2>&1
+taskkill /f /im brave.exe >nul 2>&
+1taskkill /f /im msedge.exe >nul 2>&1
+for %%B in (
+    "%LOCALAPPDATA%\Google\Chrome\User Data"
+    "%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data"
+    "%LOCALAPPDATA%\Microsoft\Edge\User Data"
+) do (
+    if exist "%%~B" (
+        for /r "%%~B" %%i in (*) do (
+            if /i "%%~nxi"=="History" del "%%i" /f /q
+        )
+    )
+)
 
 
 (
