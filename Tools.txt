@@ -70,13 +70,3 @@ https://github.com/Inkenal/TaskParser/releases/download/main/VigilsTaskParser.ex
 https://www.voidtools.com/Everything-1.5.0.1424b.x64-Setup.exe - "C:\SS1\Other\Everything-Setup.exe"
 https://github.com/Col-E/Recaf/releases/download/4.0.0-alpha/recaf-launcher-gui-0.8.8.jar - "C:\SS1\Other\Recaf.jar"
 https://github.com/Yamato-Security/hayabusa/releases/download/v4.3.1/hayabusa-4.3.1-win-x64.zip - "C:\SS1\Other\Hayabusa"
-
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/MeowTonynoh/Tonynoh-PS1/main/JVM-Inspector.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/MeowTonynoh/MeowModAnalyzer/main/MeowModAnalyzer.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/1Mets/tool-downloader/refs/heads/main/ScreenshareStart.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/1Mets/Forensics/refs/heads/main/ScreenShareStart.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/p1aegg/powershell/refs/heads/main/ClassLoaderDump.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/1Mets/Forensics/refs/heads/main/theseus.ps1')" - "Script"
-powershell -ExecutionPolicy Bypass -Command "Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/1Mets/Forensics/refs/heads/main/Start.ps1')" - "Script"
-
-
